@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700&family=Luckiest+Guy&display=swap');
+
+* {
+  font-family: 'DM Sans', sans-serif;
+}
+
+html {
+  min-height: 100%;
+}
+
+#spinner {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity .5s ease-out, visibility 0s linear .5s;
+  z-index: 99999;
+}
+
+#spinner.show {
+  transition: opacity .5s ease-out, visibility 0s linear 0s;
+  visibility: visible;
+  opacity: 1;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #3652AD; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #ffffff; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #eaeaea; 
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.no-overflow {
+  overflow: hidden;
+}
+
+.gradient {
+  background: linear-gradient(#280274, #3652AD);
+}
+
+.gradient-card {
+  background: linear-gradient(#3652AD, #280274);
+}
+
+.correct {
+  background: lightgreen !important;
+  background-color: lightgreen !important;
+  color: green;
+}
+
+.correct h1,h2,h3,h4,h5,h6 {
+  color: green !important;
+}
+
+.correct .button {
+  background-color: green;
+}
+
+.correct .button:hover {
+  background-color: darkgreen;
+}
+
+.incorrect {
+  background: pink !important;
+  background-color: pink !important;
+  color: maroon;
+}
+
+.incorrect h1,h2,h3,h4,h5,h6 {
+  color: maroon !important;
+}
+
+.incorrect .button {
+  background-color: maroon;
+}
+
+.incorrect .button:hover {
+  background-color: rgb(89, 1, 1);
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.text-main {
+  color: #FF8911 !important;
+}
+
+.font-main {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.button {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #FF8911;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 16px;
+  font-weight: 400;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #df770f;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active {
+  background-color: #df770f;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.button.button-alt {
+  background-color: #280274;
+}
+
+.button.button-alt:hover {
+  background-color: #3652AD;
+}
+
+.button.button-gevaar {
+  background-color: #d20505;
+}
+
+.button.button-gevaar:hover {
+  background-color: #9e0808;
+}
+
+.form-control {
+  color: white !important;
+  font-size: 20px !important;
+}
+
+.form-control.form-input {
+  border-top: 0 !important;
+  border-right: 0 !important;
+  border-bottom: 2px solid white !important;
+  border-left: 0 !important;
+  transition: 0.3s;
+}
+
+.form-control.form-input:focus, .form-control.form-input:active {
+  border-bottom: 2px solid #ccc !important;
+}
+
+.alert.alert-success {
+  background-color: lightgreen;
+  border: 0;
+  color: green;
+}
+
+.alert.alert-danger {
+  background-color: pink;
+  border: 0;
+  color: maroon;
+}
+
+pre {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0;
+  background-color: #ddd;
+  border: 1px solid #ccc;
+} 
